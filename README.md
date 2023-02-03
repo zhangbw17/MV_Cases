@@ -11,7 +11,7 @@ The groundtruth video is long and the shot of "walking down a short runway"' is 
 This is a similar case to long_video_0. Even though the video is not as long as gt_8914.mp4 (30 seconds), the shot that clearly indicates "cushion seat" (we think only the sixth second) is too short, so it is confusing for the model.
 
 - audio_0:
-The model needs audio information to determine whether a woman or a man is speaking.
+Audio information is necessary in order to determine whether a woman or a man is speaking.
 
 - audio_1:
-The predicted video has a similar background to the groundtruth, while the man talks about measures to deal with the economic crisis rather than merchant market currencies.
+Though the retrieved result is visually similar to the ground-truth, the contents of the talk do not match that of query text. With the help of audio contents (like transcripts from ASR), the results can be corrected.
