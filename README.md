@@ -2,7 +2,7 @@
 Failure cases of MV-Adapter
 
 We summarize two failure modes from case study. (1) Since we use a fixed number of frames per video in training, it may fail to capture fine movements in long videos as the differences between frames aggregate. Employing sliding window of videos may be helpful. (2) Results may be incorrect when the caption is related to the audio aspect.
-The cases for these are put into ./long_video_* and ./audio_* respectively. Each directory contains one retrieval result, including caption.txt (the query we use to search), gt_*.mp4 and pred_*.mp4 (the groundtruth and predicted video, where * represents the index number of the video in MSR-VTT.)
+The cases for these are put into ./long_video_* and ./audio_* respectively. Each directory contains one retrieval result, including caption.txt (the query we use to search), gt_\*.mp4 and pred_\*.mp4 (the groundtruth and predicted video, where * represents the index number of the video in MSR-VTT.)
 
 To be more specific, we will go over each example:
 - long_video_0
