@@ -5,7 +5,7 @@ We summarize two failure modes from the case study. (1) Since we use a fixed num
 
 To be more specific, we will go over each example:
 - long_video_0
-The groundtruth video is long and the shot of "walking down a short runway"' is relatively short. The gap between sampled frames is larger when dealing with long videos as the number of frames is fixed. As a result, the model may fail to capture fine movements.
+The groundtruth video is long and the shot of "walking down a short runway"' is relatively short. The gap between sampled frames is larger when dealing with long videos as the number of frames is fixed. As a result, the model may fail to capture fine movements and select the video that models walking (all the time) on the **long** runway.
 
 - long_video_1
 This is a similar case to long_video_0. Even though the video is not as long as gt_8914.mp4 (30 seconds), the shot that clearly indicates "cushion seat" (we think only the sixth second) is too short, so it is confusing for the model.
